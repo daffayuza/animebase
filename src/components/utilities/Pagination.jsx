@@ -21,7 +21,7 @@ export default function Pagination({ page, lastPage, setPage }) {
       {page <= 1 ? null : (
         <button className="bg-color-blue rounded border-2 border-color-black p-0.5 px-2 hover:bg-color-1 hover:text-color-white transition-all" onClick={handlePrevPage}>Prev</button>
       )}
-      <p> {page} of {lastPage} </p>
+      <p className="text-color-font"> {page} of {lastPage} </p>
       {page >= lastPage ? null : (
         <button className="bg-color-blue rounded border-2 border-color-black p-0.5 px-2 hover:bg-color-1 hover:text-color-white transition-all" onClick={handleNextPage}>Next</button>
       )}

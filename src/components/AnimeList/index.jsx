@@ -9,9 +9,11 @@ export default function AnimeList({ api }) {
           <Link
             href={`/anime/${anime.mal_id}`}
             key={index}
-            className="cursor-pointer text-color-white hover:text-color-info bg-color-test transition-all outline outline-2 outline-color-black hover:outline-color-blue hover:outline-4 outline-red-300 rounded-lg overflow-hidden"
+            className="cursor-pointer text-color-white hover:text-color-info bg-color-test transition-all outline outline-2 outline-color-blue hover:outline-color-info hover:outline-4 outline-red-300 rounded-lg overflow-hidden"
           >
-            <Image src={anime.images.webp.image_url} alt="..." width={350} height={350} className="w-full max-h-80 border-b border-color-black" />
+            <div className="relative aspect-[3/3] overflow-hidden">
+              <Image src={anime.images.webp.image_url} alt="..." className="object-fill" fill />
+            </div>
             <h1 className="font-bold md:text-xl text-md p-4 text-color-black">{anime.title}</h1>
           </Link>
         );

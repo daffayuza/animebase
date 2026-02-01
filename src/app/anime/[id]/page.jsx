@@ -8,7 +8,7 @@ export default async function Page({ params }) {
 
   return (
     <>
-      <div className="pt-4 px-4 text-2xl font-bold">
+      <div className="pt-4 px-4 text-2xl text-color-white font-bold">
         <h3>
           {anime.data.title} - {anime.data.year}
         </h3>
@@ -32,11 +32,13 @@ export default async function Page({ params }) {
         </div>
       </div>
       <div className="flex gap-6 pt-6 px-4 flex-wrap md:flex-nowrap">
-        <div className="relative w-full h-full aspect-square">
-          <Image src={anime.data.images.webp.image_url} alt={anime.data.title} fill sizes="(max-width: 768px) 100vw, 550px" className="object-fill rounded" />
+        <div className="relative w-full max-w-xs aspect-[3/4] shrink-0">
+          <Image src={anime.data.images.webp.image_url} alt={anime.data.title} fill className="object-fill rounded" />
         </div>
-
-        <p className="text-xl text-justify">{anime.data.synopsis}</p>
+        <div>
+          <h1 className='text-2xl mb-2 w-fit text-color-white bg-color-1 px-2 rounded font-semibold'>Synopsis :</h1>
+          <p className="text-xl text-justify text-color-font">{anime.data.synopsis}</p>
+        </div>
       </div>
 
       <div>

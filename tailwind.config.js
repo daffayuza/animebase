@@ -17,14 +17,15 @@ module.exports = {
       color: {
         black: '#000000',
         white: '#ffffff',
-        blue: '#40A2E3',
+        font: '#E7F6F2',
+        blue: '#A5C9CA',
         info: '#67e8f9',
         purple: '#f0abfc',
         red: '#dc2626',
         coklat: '#A0937D',
-        test: '#D2DCB6',
-        1: '#436850',
-        2: '#F8FAE5',
+        test: '#A5C9CA',
+        1: '#395B64',
+        2: '#2C3333',
       }
     }
   },
