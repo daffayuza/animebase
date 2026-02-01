@@ -5,7 +5,7 @@ import '@/app/globals.css';
 const gabarito = Gabarito({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'DapAnimeList',
+  title: 'animebase',
   description: 'Indonesian Website Anime',
 };
 

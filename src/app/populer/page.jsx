@@ -20,7 +20,7 @@ export default function Page() {
 
   return (
     <>
-      <HeaderMenu title={`ANIME TERPOPULER #${page}`} />
+      <HeaderMenu title={`Anime Terpopuler #${page}`} />
       <AnimeList api={topAnime} />
       <Pagination page={page} lastPage={topAnime.pagination?.last_visible_page} setPage={setPage} />
     </>
