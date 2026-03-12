@@ -7,7 +7,7 @@ export default async function Page({ params }) {
   const anime = await getAnimeResponse(`anime/${id}`);
 
   return (
-    <>
+    <div className='min-h-screen md:mb-[-40px] mb-10'>
       <div className="pt-4 px-4 text-2xl text-color-white font-bold">
         <h3>
           {anime.data.title} - {anime.data.year}
@@ -44,6 +44,6 @@ export default async function Page({ params }) {
       <div>
         <VideoPlayer youtubeID={anime.data.trailer.youtube_id} />
       </div>
-    </>
+    </div>
   );
 }

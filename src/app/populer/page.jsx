@@ -19,10 +19,10 @@ export default function Page() {
   }, [page]);
 
   return (
-    <>
+    <div className='mb-8'>
       <HeaderMenu title={`Anime Terpopuler #${page}`} />
       <AnimeList api={topAnime} />
       <Pagination page={page} lastPage={topAnime.pagination?.last_visible_page} setPage={setPage} />
-    </>
+    </div>
   );
 }

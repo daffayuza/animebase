@@ -16,7 +16,7 @@ export default async function Page() {
       </section>
 
       {/* anime recomended */}
-      <section className='mt-5 mb-8'>
+      <section className='mt-5 mb-14'>
         <Header title="Rekomendasi" />
         <AnimeList api={recomendedAnime} />
       </section>
