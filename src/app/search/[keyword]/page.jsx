@@ -9,7 +9,7 @@ export default async function Page({ params }) {
 
   return (
     <>
-      <section>
+      <section className='mb-10'>
         <Header title={`Pencarian Untuk ${decodedKeyword}...`} />
         <AnimeList api={searchAnime} />
       </section>
