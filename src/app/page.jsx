@@ -11,7 +11,7 @@ export default async function Page() {
   return (
     <>
       <section
-        className="relative h-[190px] overflow-hidden bg-cover bg-center rounded-2xl md:h-[300px] lg:h-[400px] md:mx-14 mx-4 md:mt-10 mt-6 md:mb-6 mb-4 border border-color-1"
+        className="relative h-[220px] overflow-hidden bg-cover bg-center rounded-2xl md:h-[300px] lg:h-[400px] md:mx-14 mx-4 md:mt-10 mt-6 md:mb-6 mb-4 border border-color-1"
         style={{
           backgroundImage: `linear-gradient(135deg, rgba(0,0,0,0.7), rgba(13,148,180,0.3)), url('/naruto.jpeg')`,
         }}

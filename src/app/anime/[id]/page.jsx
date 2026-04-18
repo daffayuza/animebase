@@ -1,6 +1,7 @@
 import getAnimeResponse from '@/libs/api-libs';
 import VideoPlayer from '@/components/utilities/VideoPlayer';
 import Image from 'next/image';
+import { FaStar } from "react-icons/fa6";
 
 export default async function Page({ params }) {
   const { id } = params;
@@ -24,7 +25,7 @@ export default async function Page({ params }) {
           </div>
           <div>
             <h1 className="text-color-blue text-lg">Skor:</h1>
-            <p className="text-color-font text-md md:text-lg">{anime.data.score}</p>
+            <div className="text-color-font text-md md:text-lg flex items-center gap-1"><FaStar className='text-color-coklat mb-0.5'/> {anime.data.score}</div>
           </div>
           <div>
             <h1 className="text-color-blue text-lg">Duration:</h1>
